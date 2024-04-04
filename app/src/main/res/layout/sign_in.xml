@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:src="@drawable/image"></ImageView>
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="Log In"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin"
+        android:gravity="center_horizontal"
+        android:text="Please enter the details below to continue"
+        android:textSize="15dp"
+        android:textStyle="italic"></TextView>
+
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="40dp"
+        android:text="Email"
+        android:textSize="17dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/edemail"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtemail"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Your Email"
+        android:textSize="17dp"
+        android:inputType="textEmailAddress"></EditText>
+
+    <TextView
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edemail"
+        android:paddingLeft="40dp"
+        android:text="Password"
+        android:textSize="17dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/edpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpassword"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Your Password"
+        android:textSize="17dp"
+        android:inputType="textPassword"></EditText>
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edpassword"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="165dp"
+        android:text="Log In"
+        android:textSize="17dp"></Button>
+
+    <TextView
+        android:id="@+id/txtnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginbtn"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="20dp"
+        android:text="New Here ?"
+        android:textSize="15dp"
+        android:textStyle="italic"></TextView>
+
+    <TextView
+        android:id="@+id/txtsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginbtn"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/txtnew"
+        android:text="Create Account"
+        android:textColor="#18C0C1"
+        android:textSize="15dp"
+        android:textStyle="bold"></TextView>
+
+
+</RelativeLayout>

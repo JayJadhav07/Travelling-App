@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/register"></ImageView>
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Registration"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+
+
+    <TextView
+        android:id="@+id/Reg_txtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registration"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="40dp"
+        android:text="Name"
+        android:textSize="17dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/Reg_edname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_txtname"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="10dp"
+        android:hint="Your name"
+        android:textSize="17dp"
+        android:inputType="text"></EditText>
+
+    <TextView
+        android:id="@+id/Reg_txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_edname"
+        android:paddingLeft="40dp"
+        android:text="Email"
+        android:textSize="17dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/Reg_edemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_txtemail"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:hint=" Your Email"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="10dp"
+        android:inputType="textEmailAddress"
+        android:textSize="17dp"></EditText>
+
+    <TextView
+        android:id="@+id/Reg_txtpassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_edemail"
+        android:paddingLeft="40dp"
+        android:text="Password"
+        android:textSize="17dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/Reg_edpassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_txtpassword1"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Create your Password"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:textSize="17dp"
+        android:inputType="textPassword"></EditText>
+
+    <TextView
+        android:id="@+id/Reg_txtpassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_edpassword1"
+        android:paddingLeft="40dp"
+        android:text="Confirm Password"
+        android:textSize="17dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/Reg_edpassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_txtpassword2"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:textSize="17dp"
+        android:inputType="textPassword"></EditText>
+
+
+    <TextView
+        android:id="@+id/Reg_txtcity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Reg_edpassword2"
+        android:paddingLeft="40dp"
+        android:text="City"
+        android:textSize="17dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/Reg_edcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/city"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/Reg_txtcity"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        android:textSize="17dp"></EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_edcity"
+        android:paddingLeft="40dp">
+
+        <TextView
+            android:id="@+id/Reg_txtgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"
+            android:text="Gender"
+            android:textSize="17dp"
+            android:textStyle="bold"></TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/Radiobtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/txtgender"
+                    android:text="Male"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="1dp"
+                    android:text="Female"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/txtgender"
+                    android:text="Other"></RadioButton>
+            </LinearLayout>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/SignUpbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginBottom="82dp"
+        android:text="Sign Up"
+        android:textSize="17dp"></Button>
+
+
+</RelativeLayout>
