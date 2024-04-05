@@ -47,7 +47,7 @@ class SignUpActivity : AppCompatActivity() {
                     Toast.makeText(this, "Password is Not Matching", Toast.LENGTH_SHORT).show()
                 }
             }else{
-                Toast.makeText(this, "Fill all the details", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please Fill all the details", Toast.LENGTH_SHORT).show()
                 }
 
         }

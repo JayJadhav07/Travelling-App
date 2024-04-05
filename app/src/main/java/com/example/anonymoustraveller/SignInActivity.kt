@@ -33,7 +33,7 @@ class SignInActivity : AppCompatActivity() {
                     if (task.isSuccessful){
 
                         startActivity(Intent(this,MainActivity::class.java))
-                       //Toast.makeText(this,"Login Sucessfully",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this,"Login Sucessfully",Toast.LENGTH_SHORT).show()
                     }else{
                         Toast.makeText(this,"Login Failed",Toast.LENGTH_SHORT).show()
                     }
